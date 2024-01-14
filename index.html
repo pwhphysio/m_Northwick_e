@@ -297,27 +297,27 @@
             if (totalQuestions >=9){
                 var quickDASHscore = (totalScore/(totalQuestions*4))*100;
                 if (totalQuestions == 8){
-                    document.getElementById("result").innerHTML = "非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "/100";
-                    var popup = showPopup("非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "/100");
+                    document.getElementById("result").innerHTML = "Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "/100";
+                    var popup = showPopup("Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "/100");
                 } else if (totalQuestions == 9){
-                    document.getElementById("result").innerHTML = "非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "/100";
-                    var popup = showPopup("非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "/100");
+                    document.getElementById("result").innerHTML = "Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "/100";
+                    var popup = showPopup("Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "/100");
                 } 
             } else if (totalQuestions == 8 && question9true == 0){
                 var quickDASHscore = (totalScore/(totalQuestions*4))*100;
                 if (totalQuestions == 8){
-                    document.getElementById("result").innerHTML = "非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "%";
-                    var popup = showPopup("非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "%");
+                    document.getElementById("result").innerHTML = "Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "%";
+                    var popup = showPopup("Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/32 = " + Math.round(quickDASHscore) + "%");
                 } else if (totalQuestions == 9){
-                    document.getElementById("result").innerHTML = "非常感謝您完成了這份調查中所有的問題<br><br>請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "%";
-                    var popup = showPopup("非常感謝您完成了這份調查中所有的問題<br><br>請請勿關閉此頁面，並將你的分數寫在卡上，然後交給物理治療師。<br><br> 你的分數是: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "%");
+                    document.getElementById("result").innerHTML = "Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "%";
+                    var popup = showPopup("Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your score is: " + totalScore + "/36 = " + Math.round(quickDASHscore) + "%");
                 } 
             } else if (question9true == 1){
-                document.getElementById("result").innerHTML = "你尚有" + (9 - totalQuestions)+ "條問題未回答<br>";
-				var popup = showPopup("你尚有" + (9 - totalQuestions)+ "條問題未回答。<br>請返回並繼續作答。");
+                document.getElementById("result").innerHTML = "You still have" + (9 - totalQuestions)+ "questions unanswered.<br>";
+				var popup = showPopup("You still have" + (9 - totalQuestions)+ "questions unanswered.<br>Please go back and continue answering.");
             } else {
-                document.getElementById("result").innerHTML = "你尚有" + (8 - totalQuestions)+ "條問題未回答<br>";
-				var popup = showPopup("你尚有" + (8 - totalQuestions)+ "條問題未回答。<br>請返回並繼續作答。");
+                document.getElementById("result").innerHTML = "You still have" + (8 - totalQuestions)+ "questions unanswered.<br>";
+				var popup = showPopup("You still have" + (8 - totalQuestions)+ "questions unanswered.<br>Please go back and continue answering.");
             }
             
             var okButton = popup.querySelector(".popup-button");
